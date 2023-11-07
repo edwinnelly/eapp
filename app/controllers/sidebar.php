@@ -21,22 +21,53 @@
                                     class="hide-menu">Calendar</span></a></li>
 
                         <li class="list-divider"></li>
-                        <li class="nav-small-cap"><span class="hide-menu">Components</span></li>
+                        <li class="nav-small-cap"><span class="hide-menu">Activities</span></li>
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
                                 aria-expanded="false"><i data-feather="file-text" class="feather-icon"></i><span
-                                    class="hide-menu">Forms </span></a>
+                                    class="hide-menu">Product </span></a>
                             <ul aria-expanded="false" class="collapse  first-level base-level-line">
                                 <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link"><span
-                                            class="hide-menu"> Form Inputs
+                                            class="hide-menu"> Categories
                                         </span></a>
                                 </li>
                                 <li class="sidebar-item"><a href="form-input-grid.html" class="sidebar-link"><span
-                                            class="hide-menu"> Form Grids
+                                            class="hide-menu"> Item List
                                         </span></a>
                                 </li>
                                 <li class="sidebar-item"><a href="form-checkbox-radio.html" class="sidebar-link"><span
-                                            class="hide-menu"> Checkboxes &
-                                            Radios
+                                            class="hide-menu"> New Quality Adjustment
+                                        </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="form-checkbox-radio.html" class="sidebar-link"><span
+                                            class="hide-menu"> New Cost Adjustment
+                                        </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="form-checkbox-radio.html" class="sidebar-link"><span
+                                            class="hide-menu"> Suppliers
+                                        </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="form-checkbox-radio.html" class="sidebar-link"><span
+                                            class="hide-menu"> Quantity Adjustment History
+                                        </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="form-checkbox-radio.html" class="sidebar-link"><span
+                                            class="hide-menu"> Cost Adjustment History
+                                        </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="form-checkbox-radio.html" class="sidebar-link"><span
+                                            class="hide-menu">Held Cost Memos
+                                        </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="form-checkbox-radio.html" class="sidebar-link"><span
+                                            class="hide-menu">Reminders
+                                        </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="form-checkbox-radio.html" class="sidebar-link"><span
+                                            class="hide-menu">Start Physical Inventory
+                                        </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="form-checkbox-radio.html" class="sidebar-link"><span
+                                            class="hide-menu">Price Manager
                                         </span></a>
                                 </li>
                             </ul>
