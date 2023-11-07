@@ -48,6 +48,7 @@ function validateForm() {
       cache: false,
       processData: false,
       success: (data) => {
+       
         if(data.trim() == "success"){
           $(".alert").alert('close'); 
         var notification = '<div class="alert alert-success alert-dismissible bg-success text-white border-0 fade show" role="alert">';
@@ -57,7 +58,7 @@ function validateForm() {
         $("#notificationContainer").append(notification);
         setTimeout(
               function () {
-                 window.location.href='dashboard'
+                 window.location.href='./public/dashboard'
               }, 1000);
       }else{
         $(".alert").alert('close'); 

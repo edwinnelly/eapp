@@ -9,11 +9,12 @@ if (isset($_SESSION["email"]) && $_SESSION["e_secure"]) {
     session_destroy();
     echo '<script>window.location.href="login.php"</script>';
 }
-include "../../controllers/config.php";
-include "../../controllers/core.php";
 
-$email = $_SESSION['email'];
-$e_secure = $_SESSION['e_secure'];
+include "controllers/config.php";
+include "controllers/core.php";
+
+ $email = $_SESSION['email'];
+ $e_secure = $_SESSION['e_secure'];
 
 try {
     if (isset($email, $e_secure)) {
@@ -22,7 +23,7 @@ try {
         $data = json_decode($response_call);
         foreach ($data as $user_info) {
             $email_addr1 = $user_info->email_addr;
-            $username1 = $user_info->username;
+             $username1 = $user_info->username;
             $id1 = $user_info->id;
             $account_activation = $user_info->account_activation;
             $user_key = $user_info->user_key;

@@ -1,7 +1,7 @@
 <?php
-include "../controllers/config.php";
-include "../controllers/core.php";
- include "../controllers/user_data.php";
+include "../../controllers/config.php";
+include "../../controllers/core.php";
+ include "../../controllers/user_data.php";
 ?>
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
@@ -45,7 +45,7 @@ include"fonts/font.php";
         <!-- ============================================================== -->
         <header class="topbar" data-navbarbg="skin6">
             <?php
-            include "controllers/header.php";
+            include "../controllers/header.php";
             ?>
         </header>
         <!-- ============================================================== -->
@@ -57,7 +57,7 @@ include"fonts/font.php";
         <aside class="left-sidebar" data-sidebarbg="skin6">
             <!-- Sidebar scroll-->
             <?php
-            include "controllers/sidebar.php";
+            include "../controllers/sidebar.php";
             ?>
             <!-- End Sidebar scroll-->
         </aside>
