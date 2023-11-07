@@ -156,10 +156,11 @@ $data = json_decode($response_call);
                                     <table id="zero_config" class="table table-striped table-bordered no-wrap">
                                         <thead>
                                             <tr>
+                                                <th>SN</th>
                                                 <th>Status</th>
                                                 <th>Business Names</th>
                                                 <th>ID</th>
-                                                <th>Product</th>
+                                                <th>Currency</th>
                                                 <th>Created by</th>
                                                 <th>Date</th>
                                                 <th>Action</th>
@@ -167,9 +168,11 @@ $data = json_decode($response_call);
                                         </thead>
                                         <tbody>
                                             <?php
+                                            $sn;
                                             foreach ($data as $companylist) {
                                                 ?>
                                                 <tr>
+                                                    <td><span class="badge badge-light-warning"><?=  $sn++;  ?></span></td>
                                                     <td><span class="badge badge-light-warning">Active</span></td>
                                                     <td><a href="javascript:void(0)" class="font-weight-medium link"><?= $companylist->company_name;  ?></a></td>
                                                     <td><a href="javascript:void(0)" class="font-bold link"><?= $companylist->checker_id;  ?></a></td>

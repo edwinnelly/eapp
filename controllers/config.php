@@ -1,6 +1,6 @@
 <?php
 //custom url local
-$domain_url = 'http://localhost/api_v2';
+$domain_url = 'http://localhost/eapp_api';
 
 function cleanUserInput($input) {
     // Remove leading and trailing whitespace
