@@ -1,30 +1,18 @@
 <!-- <?php
-include "../../controllers/config.php";
-include "../../controllers/core.php";
- include "../../controllers/user_data.php";
-?> -->
+        include "../../controllers/config.php";
+        include "../../controllers/core.php";
+        include "../../controllers/user_data.php";
+        ?> -->
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Tell the browser to be responsive to screen width -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
-    <title>Adminmart Template - The Ultimate Multipurpose admin template</title>
-    <!-- Custom CSS -->
-    <link href="assets/extra-libs/c3/c3.min.css" rel="stylesheet">
-    <link href="assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
-    <link href="assets/extra-libs/jvector/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
-    <!-- Custom CSS -->
-    <link href="dist/css/style.min.css" rel="stylesheet">
     <?php
-include "fonts/font.php";
-?>
+    include "../controllers/style.php";
+    include "fonts/font.php";
+    ?>
 </head>
+
 <body>
     <!-- ============================================================== -->
     <!-- Preloader - style you can find in spinners.css -->
@@ -38,8 +26,7 @@ include "fonts/font.php";
     <!-- ============================================================== -->
     <!-- Main wrapper - style you can find in pages.scss -->
     <!-- ============================================================== -->
-    <div id="main-wrapper" data-theme="light" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
-        data-sidebar-position="fixed" data-header-position="fixed" data-boxed-layout="full">
+    <div id="main-wrapper" data-theme="light" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed" data-boxed-layout="full">
         <!-- ============================================================== -->
         <!-- Topbar header - style you can find in pages.scss -->
         <!-- ============================================================== -->
@@ -75,7 +62,7 @@ include "fonts/font.php";
                 <div class="row">
                     <div class="col-7 align-self-center">
                         <h3 class="page-title text-truncate text-dark font-weight-medium mb-1">
-NecessityGlobal Resources Ltd</h3>
+                            NecessityGlobal Resources Ltd</h3>
                         <div class="d-flex align-items-center">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb m-0 p-0">
@@ -113,8 +100,7 @@ NecessityGlobal Resources Ltd</h3>
                                 <div>
                                     <div class="d-inline-flex align-items-center">
                                         <h2 class="text-dark mb-1 font-weight-medium">236</h2>
-                                        <span
-                                            class="badge bg-primary font-12 text-white font-weight-medium badge-pill ml-2 d-lg-block d-md-none">+18.33%</span>
+                                        <span class="badge bg-primary font-12 text-white font-weight-medium badge-pill ml-2 d-lg-block d-md-none">+18.33%</span>
                                     </div>
                                     <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">New Clients</h6>
                                 </div>
@@ -128,8 +114,7 @@ NecessityGlobal Resources Ltd</h3>
                         <div class="card-body">
                             <div class="d-flex d-lg-flex d-md-block align-items-center">
                                 <div>
-                                    <h2 class="text-dark mb-1 w-100 text-truncate font-weight-medium"><sup
-                                            class="set-doller">$</sup>18,306</h2>
+                                    <h2 class="text-dark mb-1 w-100 text-truncate font-weight-medium"><sup class="set-doller">$</sup>18,306</h2>
                                     <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">Earnings of Month
                                     </h6>
                                 </div>
@@ -145,8 +130,7 @@ NecessityGlobal Resources Ltd</h3>
                                 <div>
                                     <div class="d-inline-flex align-items-center">
                                         <h2 class="text-dark mb-1 font-weight-medium">1538</h2>
-                                        <span
-                                            class="badge bg-danger font-12 text-white font-weight-medium badge-pill ml-2 d-md-none d-lg-block">-18.33%</span>
+                                        <span class="badge bg-danger font-12 text-white font-weight-medium badge-pill ml-2 d-md-none d-lg-block">-18.33%</span>
                                     </div>
                                     <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">New Projects</h6>
                                 </div>
@@ -234,8 +218,7 @@ NecessityGlobal Resources Ltd</h3>
                                     </div>
                                     <div class="d-flex align-items-start border-left-line pb-3">
                                         <div>
-                                            <a href="javascript:void(0)"
-                                                class="btn btn-danger btn-circle mb-2 btn-item">
+                                            <a href="javascript:void(0)" class="btn btn-danger btn-circle mb-2 btn-item">
                                                 <i data-feather="message-square"></i>
                                             </a>
                                         </div>
@@ -272,7 +255,7 @@ NecessityGlobal Resources Ltd</h3>
                 <!-- *************************************************************** -->
                 <!-- Start Location and Earnings Charts Section -->
                 <!-- *************************************************************** -->
-                
+
                 <!-- *************************************************************** -->
                 <!-- End Location and Earnings Charts Section -->
                 <!-- *************************************************************** -->
@@ -287,9 +270,7 @@ NecessityGlobal Resources Ltd</h3>
                                     <h4 class="card-title">Top Leaders</h4>
                                     <div class="ml-auto">
                                         <div class="dropdown sub-dropdown">
-                                            <button class="btn btn-link text-muted dropdown-toggle" type="button"
-                                                id="dd1" data-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
+                                            <button class="btn btn-link text-muted dropdown-toggle" type="button" id="dd1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <i data-feather="more-vertical"></i>
                                             </button>
                                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dd1">
@@ -322,10 +303,7 @@ NecessityGlobal Resources Ltd</h3>
                                             <tr>
                                                 <td class="border-top-0 px-2 py-4">
                                                     <div class="d-flex no-block align-items-center">
-                                                        <div class="mr-3"><img
-                                                                src="assets/images/users/widget-table-pic1.jpg"
-                                                                alt="user" class="rounded-circle" width="45"
-                                                                height="45" /></div>
+                                                        <div class="mr-3"><img src="assets/images/users/widget-table-pic1.jpg" alt="user" class="rounded-circle" width="45" height="45" /></div>
                                                         <div class="">
                                                             <h5 class="text-dark mb-0 font-16 font-weight-medium">Hanna
                                                                 Gover</h5>
@@ -336,21 +314,14 @@ NecessityGlobal Resources Ltd</h3>
                                                 <td class="border-top-0 text-muted px-2 py-4 font-14">Elite Admin</td>
                                                 <td class="border-top-0 px-2 py-4">
                                                     <div class="popover-icon">
-                                                        <a class="btn btn-primary rounded-circle btn-circle font-12"
-                                                            href="javascript:void(0)">DS</a>
-                                                        <a class="btn btn-danger rounded-circle btn-circle font-12 popover-item"
-                                                            href="javascript:void(0)">SS</a>
-                                                        <a class="btn btn-cyan rounded-circle btn-circle font-12 popover-item"
-                                                            href="javascript:void(0)">RP</a>
-                                                        <a class="btn btn-success text-white rounded-circle btn-circle font-20"
-                                                            href="javascript:void(0)">+</a>
+                                                        <a class="btn btn-primary rounded-circle btn-circle font-12" href="javascript:void(0)">DS</a>
+                                                        <a class="btn btn-danger rounded-circle btn-circle font-12 popover-item" href="javascript:void(0)">SS</a>
+                                                        <a class="btn btn-cyan rounded-circle btn-circle font-12 popover-item" href="javascript:void(0)">RP</a>
+                                                        <a class="btn btn-success text-white rounded-circle btn-circle font-20" href="javascript:void(0)">+</a>
                                                     </div>
                                                 </td>
-                                                <td class="border-top-0 text-center px-2 py-4"><i
-                                                        class="fa fa-circle text-primary font-12" data-toggle="tooltip"
-                                                        data-placement="top" title="In Testing"></i></td>
-                                                <td
-                                                    class="border-top-0 text-center font-weight-medium text-muted px-2 py-4">
+                                                <td class="border-top-0 text-center px-2 py-4"><i class="fa fa-circle text-primary font-12" data-toggle="tooltip" data-placement="top" title="In Testing"></i></td>
+                                                <td class="border-top-0 text-center font-weight-medium text-muted px-2 py-4">
                                                     35
                                                 </td>
                                                 <td class="font-weight-medium text-dark border-top-0 px-2 py-4">$96K
@@ -359,10 +330,7 @@ NecessityGlobal Resources Ltd</h3>
                                             <tr>
                                                 <td class="px-2 py-4">
                                                     <div class="d-flex no-block align-items-center">
-                                                        <div class="mr-3"><img
-                                                                src="assets/images/users/widget-table-pic2.jpg"
-                                                                alt="user" class="rounded-circle" width="45"
-                                                                height="45" /></div>
+                                                        <div class="mr-3"><img src="assets/images/users/widget-table-pic2.jpg" alt="user" class="rounded-circle" width="45" height="45" /></div>
                                                         <div class="">
                                                             <h5 class="text-dark mb-0 font-16 font-weight-medium">Daniel
                                                                 Kristeen
@@ -374,17 +342,12 @@ NecessityGlobal Resources Ltd</h3>
                                                 <td class="text-muted px-2 py-4 font-14">Real Homes WP Theme</td>
                                                 <td class="px-2 py-4">
                                                     <div class="popover-icon">
-                                                        <a class="btn btn-primary rounded-circle btn-circle font-12"
-                                                            href="javascript:void(0)">DS</a>
-                                                        <a class="btn btn-danger rounded-circle btn-circle font-12 popover-item"
-                                                            href="javascript:void(0)">SS</a>
-                                                        <a class="btn btn-success text-white rounded-circle btn-circle font-20"
-                                                            href="javascript:void(0)">+</a>
+                                                        <a class="btn btn-primary rounded-circle btn-circle font-12" href="javascript:void(0)">DS</a>
+                                                        <a class="btn btn-danger rounded-circle btn-circle font-12 popover-item" href="javascript:void(0)">SS</a>
+                                                        <a class="btn btn-success text-white rounded-circle btn-circle font-20" href="javascript:void(0)">+</a>
                                                     </div>
                                                 </td>
-                                                <td class="text-center px-2 py-4"><i
-                                                        class="fa fa-circle text-success font-12" data-toggle="tooltip"
-                                                        data-placement="top" title="Done"></i>
+                                                <td class="text-center px-2 py-4"><i class="fa fa-circle text-success font-12" data-toggle="tooltip" data-placement="top" title="Done"></i>
                                                 </td>
                                                 <td class="text-center text-muted font-weight-medium px-2 py-4">32</td>
                                                 <td class="font-weight-medium text-dark px-2 py-4">$85K</td>
@@ -392,10 +355,7 @@ NecessityGlobal Resources Ltd</h3>
                                             <tr>
                                                 <td class="px-2 py-4">
                                                     <div class="d-flex no-block align-items-center">
-                                                        <div class="mr-3"><img
-                                                                src="assets/images/users/widget-table-pic3.jpg"
-                                                                alt="user" class="rounded-circle" width="45"
-                                                                height="45" /></div>
+                                                        <div class="mr-3"><img src="assets/images/users/widget-table-pic3.jpg" alt="user" class="rounded-circle" width="45" height="45" /></div>
                                                         <div class="">
                                                             <h5 class="text-dark mb-0 font-16 font-weight-medium">Julian
                                                                 Josephs
@@ -407,19 +367,13 @@ NecessityGlobal Resources Ltd</h3>
                                                 <td class="text-muted px-2 py-4 font-14">MedicalPro WP Theme</td>
                                                 <td class="px-2 py-4">
                                                     <div class="popover-icon">
-                                                        <a class="btn btn-primary rounded-circle btn-circle font-12"
-                                                            href="javascript:void(0)">DS</a>
-                                                        <a class="btn btn-danger rounded-circle btn-circle font-12 popover-item"
-                                                            href="javascript:void(0)">SS</a>
-                                                        <a class="btn btn-cyan rounded-circle btn-circle font-12 popover-item"
-                                                            href="javascript:void(0)">RP</a>
-                                                        <a class="btn btn-success text-white rounded-circle btn-circle font-20"
-                                                            href="javascript:void(0)">+</a>
+                                                        <a class="btn btn-primary rounded-circle btn-circle font-12" href="javascript:void(0)">DS</a>
+                                                        <a class="btn btn-danger rounded-circle btn-circle font-12 popover-item" href="javascript:void(0)">SS</a>
+                                                        <a class="btn btn-cyan rounded-circle btn-circle font-12 popover-item" href="javascript:void(0)">RP</a>
+                                                        <a class="btn btn-success text-white rounded-circle btn-circle font-20" href="javascript:void(0)">+</a>
                                                     </div>
                                                 </td>
-                                                <td class="text-center px-2 py-4"><i
-                                                        class="fa fa-circle text-primary font-12" data-toggle="tooltip"
-                                                        data-placement="top" title="Done"></i>
+                                                <td class="text-center px-2 py-4"><i class="fa fa-circle text-primary font-12" data-toggle="tooltip" data-placement="top" title="Done"></i>
                                                 </td>
                                                 <td class="text-center text-muted font-weight-medium px-2 py-4">29</td>
                                                 <td class="font-weight-medium text-dark px-2 py-4">$81K</td>
@@ -427,10 +381,7 @@ NecessityGlobal Resources Ltd</h3>
                                             <tr>
                                                 <td class="px-2 py-4">
                                                     <div class="d-flex no-block align-items-center">
-                                                        <div class="mr-3"><img
-                                                                src="assets/images/users/widget-table-pic4.jpg"
-                                                                alt="user" class="rounded-circle" width="45"
-                                                                height="45" /></div>
+                                                        <div class="mr-3"><img src="assets/images/users/widget-table-pic4.jpg" alt="user" class="rounded-circle" width="45" height="45" /></div>
                                                         <div class="">
                                                             <h5 class="text-dark mb-0 font-16 font-weight-medium">Jan
                                                                 Petrovic
@@ -442,15 +393,11 @@ NecessityGlobal Resources Ltd</h3>
                                                 <td class="text-muted px-2 py-4 font-14">Hosting Press HTML</td>
                                                 <td class="px-2 py-4">
                                                     <div class="popover-icon">
-                                                        <a class="btn btn-primary rounded-circle btn-circle font-12"
-                                                            href="javascript:void(0)">DS</a>
-                                                        <a class="btn btn-success text-white font-20 rounded-circle btn-circle"
-                                                            href="javascript:void(0)">+</a>
+                                                        <a class="btn btn-primary rounded-circle btn-circle font-12" href="javascript:void(0)">DS</a>
+                                                        <a class="btn btn-success text-white font-20 rounded-circle btn-circle" href="javascript:void(0)">+</a>
                                                     </div>
                                                 </td>
-                                                <td class="text-center px-2 py-4"><i
-                                                        class="fa fa-circle text-danger font-12" data-toggle="tooltip"
-                                                        data-placement="top" title="In Progress"></i></td>
+                                                <td class="text-center px-2 py-4"><i class="fa fa-circle text-danger font-12" data-toggle="tooltip" data-placement="top" title="In Progress"></i></td>
                                                 <td class="text-center text-muted font-weight-medium px-2 py-4">23</td>
                                                 <td class="font-weight-medium text-dark px-2 py-4">$80K</td>
                                             </tr>
@@ -471,10 +418,10 @@ NecessityGlobal Resources Ltd</h3>
             <!-- ============================================================== -->
             <!-- footer -->
             <!-- ============================================================== -->
-           
+
             <?php
-        include "../controllers/footer.php";
-        ?>
+            include "../controllers/footer.php";
+            ?>
             <!-- ============================================================== -->
             <!-- End footer -->
             <!-- ============================================================== -->
@@ -510,12 +457,12 @@ NecessityGlobal Resources Ltd</h3>
     <script src="assets/extra-libs/jvector/jquery-jvectormap-world-mill-en.js"></script>
     <script src="dist/js/pages/dashboards/dashboard1.min.js"></script>
     <script>
-if (new Date().getHours() < 18) {
-  document.getElementById("greet").innerHTML =  "Good day <?php echo $username1;  ?>";
-}else{
-    document.getElementById("greet").innerHTML =  "Good day <?php echo $username1;  ?>";
-}
-</script>
+        if (new Date().getHours() < 18) {
+            document.getElementById("greet").innerHTML = "Good day <?php echo $username1;  ?>";
+        } else {
+            document.getElementById("greet").innerHTML = "Good day <?php echo $username1;  ?>";
+        }
+    </script>
 </body>
 
 </html>

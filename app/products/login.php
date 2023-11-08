@@ -2,18 +2,8 @@
 <html dir="ltr">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Tell the browser to be responsive to screen width -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
-    <title>Adminmart Template - The Ultimate Multipurpose admin template</title>
-    <!-- Custom CSS -->
-    <link href="dist/css/style.min.css" rel="stylesheet">
     <?php
+    include "../controllers/style.php";
     include "fonts/font.php";
     ?>
 </head>
@@ -38,7 +28,7 @@
         <div class="auth-wrapper d-flex no-block justify-content-center align-items-center position-relative"
             style="background:url('assets/images/big/auth-bg.jpg') no-repeat center center;">
             <div class="auth-box row text-center">
-                <div class="col-lg-7 col-md-7 modal-bg-img" style="">
+                <div class="col-lg-7 col-md-7 modal-bg-img">
                     <img src="https://images.pexels.com/photos/6169659/pexels-photo-6169659.jpeg?auto=compress&cs=tinysrgb&w=1600"
                         style="height: 500px;">
                 </div>

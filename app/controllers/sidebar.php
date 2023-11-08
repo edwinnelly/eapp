@@ -26,39 +26,40 @@
                                 aria-expanded="false"><i data-feather="file-text" class="feather-icon"></i><span
                                     class="hide-menu">Product </span></a>
                             <ul aria-expanded="false" class="collapse  first-level base-level-line">
-                                <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link"><span
+                                <li class="sidebar-item"><a href="categories.php
+                                " class="sidebar-link"><span
                                             class="hide-menu"> Categories
                                         </span></a>
                                 </li>
-                                <li class="sidebar-item"><a href="form-input-grid.html" class="sidebar-link"><span
+                                <li class="sidebar-item"><a href="item-list.php" class="sidebar-link"><span
                                             class="hide-menu"> Item List
                                         </span></a>
                                 </li>
-                                <li class="sidebar-item"><a href="form-checkbox-radio.html" class="sidebar-link"><span
+                                <li class="sidebar-item"><a href="new-quantity-adjustment.php" class="sidebar-link"><span
                                             class="hide-menu"> New Quality Adjustment
                                         </span></a>
                                 </li>
-                                <li class="sidebar-item"><a href="form-checkbox-radio.html" class="sidebar-link"><span
+                                <li class="sidebar-item"><a href="new-cost-adjustment.php" class="sidebar-link"><span
                                             class="hide-menu"> New Cost Adjustment
                                         </span></a>
                                 </li>
-                                <li class="sidebar-item"><a href="form-checkbox-radio.html" class="sidebar-link"><span
+                                <li class="sidebar-item"><a href="suppliers-list.php" class="sidebar-link"><span
                                             class="hide-menu"> Suppliers
                                         </span></a>
                                 </li>
-                                <li class="sidebar-item"><a href="form-checkbox-radio.html" class="sidebar-link"><span
+                                <li class="sidebar-item"><a href="quantity-adjustment-history.php" class="sidebar-link"><span
                                             class="hide-menu"> Quantity Adjustment History
                                         </span></a>
                                 </li>
-                                <li class="sidebar-item"><a href="form-checkbox-radio.html" class="sidebar-link"><span
+                                <li class="sidebar-item"><a href="cost-adj.php" class="sidebar-link"><span
                                             class="hide-menu"> Cost Adjustment History
                                         </span></a>
                                 </li>
-                                <li class="sidebar-item"><a href="form-checkbox-radio.html" class="sidebar-link"><span
+                                <li class="sidebar-item"><a href="held-quantity.php" class="sidebar-link"><span
                                             class="hide-menu">Held Cost Memos
                                         </span></a>
                                 </li>
-                                <li class="sidebar-item"><a href="form-checkbox-radio.html" class="sidebar-link"><span
+                                <li class="sidebar-item"><a href="reminder.php" class="sidebar-link"><span
                                             class="hide-menu">Reminders
                                         </span></a>
                                 </li>
@@ -66,7 +67,7 @@
                                             class="hide-menu">Start Physical Inventory
                                         </span></a>
                                 </li>
-                                <li class="sidebar-item"><a href="form-checkbox-radio.html" class="sidebar-link"><span
+                                <li class="sidebar-item"><a href="price-manager.php" class="sidebar-link"><span
                                             class="hide-menu">Price Manager
                                         </span></a>
                                 </li>
