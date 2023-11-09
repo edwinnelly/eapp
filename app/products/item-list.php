@@ -97,6 +97,9 @@
                                 </h6>
                                 <div class="table-responsive">
                                     <table id="zero_config" class="table table-striped table-bordered no-wrap">
+                                        <div class="mb-5">
+                                            <button type="button" class="btn btn-primary float-right " data-toggle="modal" data-target="#right-modal">Add New Item</button>
+                                        </div>
                                         <thead>
                                             <tr>
                                                 <th>S/N</th>
@@ -141,7 +144,8 @@
                                                             <a class="dropdown-item" href="#">Edit item Images </a>
                                                             <a class="dropdown-item" href="#">Edit item Category </a>
                                                             <a class="dropdown-item" href="#">Mark As Out of Stock</a>
-                                                            <a class="dropdown-item" href="#">Items to Other Branches</a>
+                                                            <a class="dropdown-item" href="#">Items to Other
+                                                                Branches</a>
                                                             <a class="dropdown-item" href="#">Restock Item</a>
                                                             <a class="dropdown-item" href="#">Returned Item</a>
                                                             <a class="dropdown-item" href="#">Delete</a>
@@ -162,6 +166,31 @@
             ?>
         </div>
     </div>
+    <div id="right-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-right">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center pb-3">
+                        <span class="fw-bold fs-5">Add New Item</span>
+                    </div>
+                    <form action="#" class="pl-5 pr-5">
+
+                        <div class="form-group mb-4">
+                            <input class="form-control" type="text" required="" placeholder="">
+                        </div>
+                        <div class="form-group text-center">
+                            <button class="btn btn-rounded btn-primary btn-sm me-2" type="submit">Add Item</button>
+                            <button class="btn btn-rounded btn-danger btn-sm">X</button>
+                        </div>
+
+                    </form>
+                    <!-- </div> -->
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
         <!-- ============================================================== -->
         <script src="assets/libs/jquery/dist/jquery.min.js"></script>
         <!-- Bootstrap tether Core JavaScript -->
