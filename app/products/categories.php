@@ -122,7 +122,7 @@
                                                         </button>
                                                         <div class="dropdown-menu">
 
-                                                            <a class="dropdown-item" href="categoriess#" data-toggle="modal" data-target="#sright-modal">Edit</a>
+                                                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#sright-modal">Edit</a>
                                                             <a class="dropdown-item" href="ui-buttons.html#">Delete</a>
                                                         </div>
                                                         <!-- <button type="button" class="btn btn-info" data-toggle="modal" data-target="#login-modal">Log in Modal</button> -->
@@ -143,6 +143,8 @@
 
         </div>
     </div>
+   
+
     <div id="right-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-sm modal-right">
             <div class="modal-content">
@@ -168,7 +170,7 @@
                 </div>
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
-    </div><!-- /.modal-dialog -->
+    </div><!-- /.modal-dialog ending-->
     <div id="sright-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-sm modal-right">
             <div class="modal-content">

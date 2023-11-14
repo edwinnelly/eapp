@@ -21,7 +21,8 @@
     <!-- ============================================================== -->
     <!-- Main wrapper - style you can find in pages.scss -->
     <!-- ============================================================== -->
-    <div id="main-wrapper" data-theme="light" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed" data-boxed-layout="full">
+    <div id="main-wrapper" data-theme="light" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+        data-sidebar-position="fixed" data-header-position="fixed" data-boxed-layout="full">
         <!-- ============================================================== -->
         <!-- Topbar header - style you can find in pages.scss -->
         <!-- ============================================================== -->
@@ -68,7 +69,8 @@
                     </div>
                     <div class="col-5 align-self-center">
                         <div class="customize-input float-right">
-                            <select class="custom-select custom-select-set form-control bg-white border-0 custom-shadow custom-radius">
+                            <select
+                                class="custom-select custom-select-set form-control bg-white border-0 custom-shadow custom-radius">
                                 <option selected>Aug 19</option>
                                 <option value="1">July 19</option>
                                 <option value="2">Jun 19</option>
@@ -138,12 +140,14 @@
                                                 <td></td>
                                                 <td class="text-center">
                                                     <div class="btn-group dropleft">
-                                                        <button type="button" class="btn btn-primary btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <button type="button" class="btn btn-primary btn-sm"
+                                                            data-toggle="dropdown" aria-haspopup="true"
+                                                            aria-expanded="false">
                                                             Action
                                                         </button>
                                                         <div class="dropdown-menu">
                                                             <!-- Dropdown menu links -->
-                                                            <a class="dropdown-item" href="#">Edit </a>
+                                                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#first-modal">Edit</a>
                                                             <a class="dropdown-item" href="#">Add </a>
                                                             <a class="dropdown-item" href="#">Delete</a>
                                                         </div>
@@ -163,27 +167,54 @@
             ?>
         </div>
     </div>
-        <!-- ============================================================== -->
-        <script src="assets/libs/jquery/dist/jquery.min.js"></script>
-        <!-- Bootstrap tether Core JavaScript -->
-        <script src="assets/libs/popper.js/dist/umd/popper.min.js"></script>
-        <script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
-        <!-- apps -->
-        <!-- apps -->
-        <script src="dist/js/app-style-switcher.js"></script>
-        <script src="dist/js/feather.min.js"></script>
-        <!-- slimscrollbar scrollbar JavaScript -->
-        <script src="assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
-        <script src="assets/extra-libs/sparkline/sparkline.js"></script>
-        <!--Wave Effects -->
-        <!-- themejs -->
-        <!--Menu sidebar -->
-        <script src="dist/js/sidebarmenu.js"></script>
-        <!--Custom JavaScript -->
-        <script src="dist/js/custom.min.js"></script>
-        <!--This page plugins -->
-        <script src="assets/extra-libs/datatables.net/js/jquery.dataTables.min.js"></script>
-        <script src="dist/js/pages/datatable/datatable-basic.init.js"></script>
+    <div id="first-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-right">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center pb-3">
+                        <span class="fw-bold fs-5">Edit Cost Adjustment</span>
+                    </div>
+                    <form action="#" class="pl-5 pr-5">
+
+                        <div class="form-group mb-4">
+                            <input class="form-control" type="text" required="" placeholder="">
+                        </div>
+                        <div class="form-group text-center">
+                            <button class="btn btn-rounded btn-success btn-sm me-2" type="submit">Save</button>
+                            <button class="btn btn-rounded btn-danger btn-sm">X</button>
+                        </div>
+
+                    </form>
+                    <!-- </div> -->
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal-dialog ending-->
+
+    <!-- ============================================================== -->
+    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="assets/libs/popper.js/dist/umd/popper.min.js"></script>
+    <script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- apps -->
+    <!-- apps -->
+    <script src="dist/js/app-style-switcher.js"></script>
+    <script src="dist/js/feather.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
+    <script src="assets/extra-libs/sparkline/sparkline.js"></script>
+    <!--Wave Effects -->
+    <!-- themejs -->
+    <!--Menu sidebar -->
+    <script src="dist/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="dist/js/custom.min.js"></script>
+    <!--This page plugins -->
+    <script src="assets/extra-libs/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="dist/js/pages/datatable/datatable-basic.init.js"></script>
 </body>
 
 </html>
