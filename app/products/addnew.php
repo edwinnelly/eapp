@@ -15,8 +15,7 @@
             <div class="lds-pos"></div>
         </div>
     </div>
-    <div id="main-wrapper" data-theme="light" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
-        data-sidebar-position="fixed" data-header-position="fixed" data-boxed-layout="full">
+    <div id="main-wrapper" data-theme="light" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed" data-boxed-layout="full">
         <header class="topbar" data-navbarbg="skin6">
             <?php
             include "../controllers/header.php";
@@ -45,8 +44,7 @@
                     </div>
                     <div class="col-5 align-self-center">
                         <div class="customize-input float-right">
-                            <select
-                                class="custom-select custom-select-set form-control bg-white border-0 custom-shadow custom-radius">
+                            <select class="custom-select custom-select-set form-control bg-white border-0 custom-shadow custom-radius">
                                 <option selected>Aug 19</option>
                                 <option value="1">July 19</option>
                                 <option value="2">Jun 19</option>
@@ -63,8 +61,8 @@
                                 <h4 class="card-title"> Add New Items</h4>
                                 <div class="row">
                                     <div class="form-group mb-4 col-lg-3 col-md-6">
-                                        <label class="mr-sm-2" for="inlineFormCustomSelect">Item Type</label>
-                                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                        <label class="" for="inlineFormCustomSelect">Item Type</label>
+                                        <select class="custom-select " id="inlineFormCustomSelect">
                                             <option selected="">Inventory</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
@@ -72,8 +70,8 @@
                                         </select>
                                     </div>
                                     <div class="form-group mb-4 col-lg-3 col-md-6">
-                                        <label class="mr-sm-2" for="inlineFormCustomSelect">Item Type</label>
-                                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                        <label class="" for="inlineFormCustomSelect">Item Type</label>
+                                        <select class="custom-select " id="inlineFormCustomSelect">
                                             <option selected="">Choose item category</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
@@ -82,7 +80,7 @@
 
                                     </div>
                                     <div class="form-group mb-4 col-lg-3 col-md-6">
-                                        <label class="mr-sm-2" for="inlineFormCustomSelect">Category Name</label>
+                                        <label class="" for="inlineFormCustomSelect">Category Name</label>
                                         <select class="custom-select mr-sm-3" id="inlineFormCustomSelect">
                                             <option selected="">Choose Vendor Name</option>
                                             <option value="1">One</option>
@@ -91,7 +89,7 @@
                                         </select>
                                     </div>
                                     <div class="form-group mb-4 col-lg-3 col-md-6">
-                                        <label class="mr-sm-2" for="inlineFormCustomSelect">Category Name</label>
+                                        <label class="" for="inlineFormCustomSelect">Category Name</label>
                                         <select class="custom-select mr-sm-3" id="inlineFormCustomSelect">
                                             <option selected=""></option>
                                             <option value="1">One</option>
@@ -100,8 +98,8 @@
                                         </select>
                                     </div>
                                     <div class="form-group mb-4 col-lg-3 col-md-6">
-                                        <label class="mr-sm-2" for="inlineFormCustomSelect">Attributes</label>
-                                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                        <label class="" for="inlineFormCustomSelect">Attributes</label>
+                                        <select class="custom-select " id="inlineFormCustomSelect">
                                             <option selected="">Inventory</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
@@ -109,8 +107,8 @@
                                         </select>
                                     </div>
                                     <div class="form-group mb-4 col-lg-3 col-md-6">
-                                        <label class="mr-sm-2" for="inlineFormCustomSelect">Size</label>
-                                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                        <label class="" for="inlineFormCustomSelect">Size</label>
+                                        <select class="custom-select " id="inlineFormCustomSelect">
                                             <option selected="">Choose item category</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
@@ -118,8 +116,8 @@
                                         </select>
                                     </div>
                                     <div class="form-group mb-4 col-lg-3 col-md-6">
-                                        <label class="mr-sm-2" for="inlineFormCustomSelect">On Hand Quantity</label>
-                                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                        <label class="" for="inlineFormCustomSelect">On Hand Quantity</label>
+                                        <select class="custom-select " id="inlineFormCustomSelect">
                                             <option selected="">Choose Vendor Name</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
@@ -127,8 +125,8 @@
                                         </select>
                                     </div>
                                     <div class="form-group mb-4 col-lg-3 col-md-6">
-                                        <label class="mr-sm-2" for="inlineFormCustomSelect">Category Name</label>
-                                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                        <label class="" for="inlineFormCustomSelect">Category Name</label>
+                                        <select class="custom-select " id="inlineFormCustomSelect">
                                             <option selected=""></option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
@@ -136,8 +134,8 @@
                                         </select>
                                     </div>
                                     <div class="form-group mb-4 col-lg-3 col-md-6">
-                                        <label class="mr-sm-2" for="inlineFormCustomSelect">ReOrder</label>
-                                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                        <label class="" for="inlineFormCustomSelect">ReOrder</label>
+                                        <select class="custom-select " id="inlineFormCustomSelect">
                                             <option selected=""></option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
@@ -145,175 +143,78 @@
                                         </select>
                                     </div>
                                     <div class="form-group mb-4 col-lg-3 col-md-6">
-                                        <label class="mr-sm-2" for="inlineFormCustomSelect">Unit Of Measurement</label>
-                                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                        <label class="" for="inlineFormCustomSelect">Unit Of Measurement</label>
+                                        <select class="custom-select " id="inlineFormCustomSelect">
                                             <option selected=""></option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
                                             <option value="3">Three</option>
                                         </select>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="card">
-                                    <div class="card-body col-lg-7">
-                                        <h4 class="card-title fw-bold"> Description Info</h4>
-                                        <div class="mb-3">
-                                            <label for="exampleFormControlTextarea1" class="form-label"></label>
-                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
-                                                col="7" placeholder="Description"></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title"> Alternate Look-Up</h4>
-                                    <div class="row">
-                                        <div class="form-group mb-4 col-lg-3 col-md-6">
-                                            <label class="mr-sm-1" for="inlineFormCustomSelect">Item Barcode #</label>
-                                            <input type="text" class="form-control" placeholder=""
-                                                aria-label="First name">
-                                        </div>
-                                        <div class="form-group mb-4 col-lg-3 col-md-6">
-                                            <label class="mr-sm-1" for="inlineFormCustomSelect">UPC</label>
-                                            <input type="text" class="form-control" placeholder=""
-                                                aria-label="First name">
-                                        </div>
-                                        <div class="form-group mb-4 col-lg-3 col-md-6">
-                                            <label class="mr-sm-4" for="inlineFormCustomSelect">Alternate
-                                                Look-UP</label>
-                                            <input type="text" class="form-control" placeholder=""
-                                                aria-label="First name">
-                                        </div>
-                                        <div class="form-group mb-4 col-lg-3 col-md-6">
-                                            <label class="mr-sm-4" for="inlineFormCustomSelect">Regular Price</label>
-                                            <input type="text" class="form-control" placeholder=""
-                                                aria-label="First name">
-                                        </div>
-                                        <div class="form-group mb-4 col-lg-3 col-md-6">
-                                            <label class="mr-sm-4" for="inlineFormCustomSelect">Order Price</label>
-                                            <input type="text" class="form-control" placeholder=""
-                                                aria-label="First name">
-                                        </div>
-                                        <div class="form-group mb-4 col-lg-3 col-md-6">
-                                            <label class="mr-sm-4" for="inlineFormCustomSelect">Aversge Unit
-                                                Cost</label>
-                                            <input type="text" class="form-control" placeholder=""
-                                                aria-label="First name">
-                                        </div>
-                                        <div class="form-group mb-4 col-lg-3 col-md-6">
-                                            <label class="mr-sm-4" for="inlineFormCustomSelect">Tax Code</label>
-                                            <input type="text" class="form-control" placeholder=""
-                                                aria-label="First name">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h4 class="card-title"> Products/Information Look-up</h4>
-                                        <div class="row">
-                                            <div class="form-group mb-4 col-lg-3 col-md-6">
-                                                <label class="mr-sm-2" for="inlineFormCustomSelect">Category One</label>
-                                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                                    <option selected="">Inventory</option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                </select>
-
-                                            </div>
-
-                                            <div class="form-group mb-4 col-lg-3 col-md-6">
-                                                <label class="mr-sm-2" for="inlineFormCustomSelect">Category Two</label>
-                                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                                    <option selected="">Choose item category</option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                </select>
-
-                                            </div>
-                                            <div class="form-group mb-4 col-lg-3 col-md-6">
-                                                <label class="mr-sm-2" for="inlineFormCustomSelect">Category
-                                                    Three</label>
-                                                <select class="custom-select mr-sm-3" id="inlineFormCustomSelect">
-                                                    <option selected="">Choose Vendor Name</option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group mb-4 col-lg-3 col-md-6">
-                                                <label class="mr-sm-2" for="inlineFormCustomSelect">Category
-                                                    Four</label>
-                                                <select class="custom-select mr-sm-3" id="inlineFormCustomSelect">
-                                                    <option selected=""></option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h4 class="card-title"> Upload Product Images</h4>
-                                        <div class="row g-4">
-                                            <div class="form-group mb-4 col-3">
-                                                <label class="mr-sm-1" for="inlineFormCustomSelect">Image 1</label>
-                                                <input type="file" class="form-control p-md-1 pl-2" placeholder=""
-                                                    aria-label="First name">
-                                            </div>
-                                            <div class="form-group mb-4 col-3">
-                                                <label class="mr-sm-1" for="inlineFormCustomSelect">Image 2</label>
-                                                <input type="file" class="form-control p-md-1 m-1" placeholder=""
-                                                    aria-label="First name">
-                                            </div>
-                                            <div class="form-group mb-4 col-3">
-                                                <label class="mr-sm-4" for="inlineFormCustomSelect">Image 3</label>
-                                                <input type="file" class="form-control p-md-1 m-1" placeholder=""
-                                                    aria-label="First name">
-                                            </div>
-                                            <div class="form-group mb-4 col-3">
-                                                <label class="mr-sm-4" for="inlineFormCustomSelect">Image 4</label>
-                                                <input type="file" class="form-control p-md-1 m-1" placeholder=""
-                                                    aria-label="File Name">
-                                            </div>
-                                        </div>
-                                        <div class="mg-5">
-                                            <button type="button" class="btn btn-primary">Add Button</button>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-body col-lg-7">
+                                    <h4 class="card-title fw-bold"> Description Info</h4>
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlTextarea1" class="form-label"></label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" col="7" placeholder="Description"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title"> Alternate Look-Up</h4>
+                                <div class="row">
+                                    <div class="form-group mb-4 col-lg-3 col-md-6">
+                                        <label class="" for="inlineFormCustomSelect">Item Barcode #</label>
+                                        <input type="text" class="form-control" placeholder="" aria-label="First name">
+                                    </div>
+                                    <div class="form-group mb-4 col-lg-3 col-md-6">
+                                        <label class="" for="inlineFormCustomSelect">UPC</label>
+                                        <input type="text" class="form-control" placeholder="" aria-label="First name">
+                                    </div>
+                                    <div class="form-group mb-4 col-lg-3 col-md-6">
+                                        <label class="" for="inlineFormCustomSelect">Alternate
+                                            Look-UP</label>
+                                        <input type="text" class="form-control" placeholder="" aria-label="First name">
+                                    </div>
+                                    <div class="form-group mb-4 col-lg-3 col-md-6">
+                                        <label class="" for="inlineFormCustomSelect">Regular Price</label>
+                                        <input type="text" class="form-control" placeholder="" aria-label="First name">
+                                    </div>
+                                    <div class="form-group mb-4 col-lg-3 col-md-6">
+                                        <label class="" for="inlineFormCustomSelect">Order Price</label>
+                                        <input type="text" class="form-control" placeholder="" aria-label="First name">
+                                    </div>
+                                    <div class="form-group mb-4 col-lg-3 col-md-6">
+                                        <label class="" for="inlineFormCustomSelect">Aversge Unit
+                                            Cost</label>
+                                        <input type="text" class="form-control" placeholder="" aria-label="First name">
+                                    </div>
+                                    <div class="form-group mb-4 col-lg-3 col-md-6">
+                                        <label class="" for="inlineFormCustomSelect">Tax Code</label>
+                                        <input type="text" class="form-control" placeholder="" aria-label="First name">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input class="btn btn-primary" type="submit" value="Add Item">
             </div>
         </div>
-        <?php
+    </div>
+    <?php
     include "../controllers/footer.php";
     ?>
     </div>
