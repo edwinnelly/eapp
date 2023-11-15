@@ -7,7 +7,7 @@ function cleanUserInput($input) {
     $input = trim($input);
     
     // HTML entity encoding to prevent XSS
-    $input = htmlspecialchars($input, ENT_QUOTES, 'UTF-8');
+    $input = htmlentities($input, ENT_QUOTES, 'UTF-8');
 
     return $input;
 }

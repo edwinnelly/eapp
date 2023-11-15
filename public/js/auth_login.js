@@ -42,12 +42,13 @@ function validateForm() {
   var datas = new FormData(this);
   $.ajax({
       url: "auths_pro/auth",
-      type: "post",
+      type: "POST",
       data: datas,
       contentType: false,
       cache: false,
       processData: false,
       success: (data) => {
+       
         if(data.trim() == "success"){
           $(".alert").alert('close'); 
         var notification = '<div class="alert alert-success alert-dismissible bg-success text-white border-0 fade show" role="alert">';

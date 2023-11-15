@@ -115,7 +115,7 @@ $("#myForm").on("submit", function (e) {
             '<span aria-hidden="true">&times;</span></button></div>';
           $("#notificationContainer").append(notification);
 
-          setTimeout(function () {
+          setTimeout(function () {   
             var btn = $("#reset-btn");
             btn.attr("disabled", false).html("Create Account");
           }, 3000);
@@ -126,51 +126,3 @@ $("#myForm").on("submit", function (e) {
   }
 });
 
-
-
-$(".del").click(function () {
-  const uid = $(this).attr("data-id");
-  const wc = $(this).attr("data-fullname");
-  const sb = $(this).attr("data-nb");
-  // show in text field
-  $("#uid").val(uid);
-  $("#fullname").val(wc);
-  $("#sb").val(sb);
-  //display modal
-  $('#del_staff').modal('show');
-
-  $("#del_stf").click(function () {
-      const uid = $("#uid").val();
-      const sb = $("#sb").val();
-      const btn = $("#del_stf");
-      btn.attr('disabled', true).html('<i class="fa fa-spin fa-spinner"></i> Deleting...');
-      //validate
-      //call Ajax
-      if (uid === '' || uid === 0) {
-          toastr.warning('Please check selection.', 'warning');
-          const btn = $("#del_stf");
-          btn.attr('disabled', false).html('<i class="fa fa-spin fa-spinner"></i> Try Again...');
-      } else {
-          $.ajax({
-              url: "ajax/del_work_center.php",
-              method: "GET",
-              data: {
-                  uid: uid
-              },
-              success: function (data) {
-                  if (data.trim() == 'done') {
-                      toastr.success('The Work Center has been removed.', 'Success');
-                      let cc = '.'+sb;
-                      $(cc).hide();
-                      btn.attr('disabled', false).html('Delete Wc');
-                      $('#del_staff').modal('hide');
-
-                  }
-              }
-          });
-
-      }
-
-  });
-
-});

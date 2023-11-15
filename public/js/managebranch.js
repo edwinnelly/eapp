@@ -1,15 +1,15 @@
 //validate email
 function validateForm() {
   let companyname = document.forms["myForm"]["companyname"].value;
-  let currency = document.forms["myForm"]["currency"].value;
-  let country = document.forms["myForm"]["country"].value;
+  let address = document.forms["myForm"]["address"].value;
+  let btype = document.forms["myForm"]["btype"].value;
   var regex = /^[a-zA-Z0-9_]{3,20}$/;
 
   if (companyname.length < 4) {
     $(".alert").alert("close");
     var notification =
       '<div class="alert alert-danger alert-dismissible bg-danger text-white border-0 fade show" role="alert">';
-    notification += "Company name must be at least 8 characters long.";
+    notification += "Branch name must be at least 6 characters long.";
     notification +=
       '<button type="button" class="close" data-dismiss="alert" aria-label="Close">';
     notification += '<span aria-hidden="true">&times;</span></button></div>';
@@ -21,18 +21,18 @@ function validateForm() {
     $(".alert").alert("close");
     var notification =
       '<div class="alert alert-danger alert-dismissible bg-danger text-white border-0 fade show" role="alert">';
-    notification += "Company name must not be empty.";
+    notification += "Branch name must not be empty.";
     notification +=
       '<button type="button" class="close" data-dismiss="alert" aria-label="Close">';
     notification += '<span aria-hidden="true">&times;</span></button></div>';
     $("#notificationContainer").append(notification);
     return false;
   }
-  if (country === "") {
+  if (address === "") {
     $(".alert").alert("close");
     var notification =
       '<div class="alert alert-danger alert-dismissible bg-danger text-white border-0 fade show" role="alert">';
-    notification += "Country name must not be empty.";
+    notification += "Address name must not be empty.";
     notification +=
       '<button type="button" class="close" data-dismiss="alert" aria-label="Close">';
     notification += '<span aria-hidden="true">&times;</span></button></div>';
@@ -40,11 +40,11 @@ function validateForm() {
     return false;
   }
 
-  if (currency === "") {
+  if (btype === "") {
     $(".alert").alert("close");
     var notification =
       '<div class="alert alert-danger alert-dismissible bg-danger text-white border-0 fade show" role="alert">';
-    notification += "Currency name must not be empty.";
+    notification += "Account type name must not be empty.";
     notification +=
       '<button type="button" class="close" data-dismiss="alert" aria-label="Close">';
     notification += '<span aria-hidden="true">&times;</span></button></div>';
@@ -53,20 +53,17 @@ function validateForm() {
   }
 
   if (!regex.test(companyname)) {
-    $(".alert").alert("close");
-    var notification =
-      '<div class="alert alert-danger alert-dismissible bg-danger text-white border-0 fade show" role="alert">';
-    notification +=
-      "Company name can only contain letters, numbers, and underscores.";
-    notification +=
-      '<button type="button" class="close" data-dismiss="alert" aria-label="Close">';
+      
+    $(".alert").alert('close'); 
+    var notification = '<div class="alert alert-danger alert-dismissible bg-danger text-white border-0 fade show" role="alert">';
+    notification += 'Branch name can only contain letters, numbers, and underscores.';
+    notification += '<button type="button" class="close" data-dismiss="alert" aria-label="Close">';
     notification += '<span aria-hidden="true">&times;</span></button></div>';
 
     $("#notificationContainer").append(notification);
 
     return false;
-  }
-
+}
   return true; // Form is valid
 }
 
@@ -82,13 +79,14 @@ $("#myForm").on("submit", function (e) {
       .html("<i class='fa fa-spin fa-spinner'></i> processing");
     var datas = new FormData(this);
     $.ajax({
-      url: "controllers/add_account",
+      url: "controllers/addbranch",
       type: "post",
       data: datas,
       contentType: false,
       cache: false,
       processData: false,
       success: (data) => {
+        
         if (data.trim() == "success") {
           $(".alert").alert("close");
           var notification =
@@ -101,23 +99,24 @@ $("#myForm").on("submit", function (e) {
           $("#notificationContainer").append(notification);
 
           setTimeout(function () {
-            window.location.href = "accounts";
-          }, 3000);
+            location.reload(true);
+          }, 1000);
         } else {
-          $(".alert").alert("close");
-          var notification =
-            '<div class="alert alert-danger alert-dismissible bg-danger text-white border-0 fade show" role="alert">';
-          notification += "Error creating new business account";
-          notification +=
-            '<button type="button" class="close" data-dismiss="alert" aria-label="Close">';
-          notification +=
-            '<span aria-hidden="true">&times;</span></button></div>';
-          $("#notificationContainer").append(notification);
+          alert(data);
+          // $(".alert").alert("close");
+          // var notification =
+          //   '<div class="alert alert-danger alert-dismissible bg-danger text-white border-0 fade show" role="alert">';
+          // notification += "Error creating new branch account";
+          // notification +=
+          //   '<button type="button" class="close" data-dismiss="alert" aria-label="Close">';
+          // notification +=
+          //   '<span aria-hidden="true">&times;</span></button></div>';
+          // $("#notificationContainer").append(notification);
 
-          setTimeout(function () {
-            var btn = $("#reset-btn");
-            btn.attr("disabled", false).html("Create Account");
-          }, 3000);
+          // setTimeout(function () {
+          //   var btn = $("#reset-btn");
+          //   btn.attr("disabled", false).html("Create Account");
+          // }, 3000);
         }
       },
     });

@@ -24,6 +24,7 @@ $data = json_decode($response_call);
     <!-- This page css -->
     <!-- Custom CSS -->
     <link href="dist/css/style.min.css" rel="stylesheet">
+    <link href="assets/toastr/toastr.min.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <?php
     include "fonts/font.php";
@@ -118,7 +119,9 @@ $data = json_decode($response_call);
                                     <div class="col-md-6 col-lg-3 col-xlg-3">
                                         <div class="card card-hover">
                                             <div class="p-2 bg-primary text-center">
-                                                <h1 class="font-light text-white"><?= count($data);  ?></h1>
+                                                <h1 class="font-light text-white">
+                                                    <?= count($data); ?>
+                                                </h1>
                                                 <h6 class="text-white">Total Business</h6>
                                             </div>
                                         </div>
@@ -172,37 +175,63 @@ $data = json_decode($response_call);
                                             foreach ($data as $companylist) {
                                                 ?>
                                                 <tr>
-                                                    <td><span class="badge badge-light-warning"><?=  $sn++;  ?></span></td>
+                                                    <td><span class="badge badge-light-warning">
+                                                            <?= $sn++; ?>
+                                                        </span></td>
                                                     <td><span class="badge badge-light-warning">Active</span></td>
-                                                    <td><a href="javascript:void(0)" class="font-weight-medium link"><?= $companylist->company_name;  ?></a></td>
-                                                    <td><a href="javascript:void(0)" class="font-bold link"><?= $companylist->checker_id;  ?></a></td>
-                                                    <td><?php echo $companylist->currency_symbol;   ?></td>
-                                                    <td>Host</td>
-                                                    <td><?= $companylist->created_date;  ?></td>
+                                                    <td><a href="javascript:void(0)" class="font-weight-medium link">
+                                                            <?= $companylist->company_name; ?>
+                                                        </a>
+                                                    </td>
+                                                    <td><a href="javascript:void(0)" class="font-bold link">
+                                                            <?= $companylist->checker_id; ?>
+                                                        </a>
+                                                    </td>
                                                     <td>
-                                                    <div class="btn-group dropright">
-                                            <button type="button" class="btn btn-secondary dropdown-toggle"
-                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                Action
-                                            </button>
-                                            <div class="dropdown-menu">
-                                                <!-- Dropdown menu links -->
-                                                <a class="dropdown-item" href="ui-buttons.html#">Go to Business</a>
-                                                <a class="dropdown-item" href="ui-buttons.html#">Suspend Account</a>
-                                                <a class="dropdown-item" href="ui-buttons.html#">View Logs</a>
-                                                <a class="dropdown-item" href="ui-buttons.html#">Profile Settings</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a class="dropdown-item del" data-id="<?php echo $companylist->id; ?>" data-secure_id="<?php echo $e_secure; ?>">Delete Account</a>
-                                            </div>
-                                        </div>    
-                                                </td>
+                                                        <?php echo $companylist->currency_symbol; ?>
+                                                    </td>
+                                                    <td>Host</td>
+                                                    <td>
+                                                        <?= $companylist->created_date; ?>
+                                                    </td>
+                                                    <td>
+                                                        <div class="btn-group dropright">
+                                                            <button type="button" class="btn btn-secondary dropdown-toggle"
+                                                                data-toggle="dropdown" aria-haspopup="true"
+                                                                aria-expanded="false">
+                                                                Action
+                                                            </button>
+                                                            <div class="dropdown-menu">
+                                                                <!-- Dropdown menu links -->
+                                                                <a class="dropdown-item" href="ui-buttons.html#">Go to
+                                                                    Business</a>
+                                                                <a class="dropdown-item" href="ui-buttons.html#">Suspend
+                                                                    Account</a>
+                                                                <a class="dropdown-item" href="ui-buttons.html#">View
+                                                                    Logs</a>
+                                                                <a class="dropdown-item" href="business_list.php?cida=<?php echo base64_encode($companylist->checker_id); ?>&&cidname= <?= base64_encode($companylist->company_name); ?>">Manage
+                                                                    Business
+                                                                </a>
+                                                                <a class="dropdown-item remove_account" data-toggle="modal"
+                                                                    data-target="#del_members">Profile Settings</a>
+                                                                <div class="dropdown-divider"></div>
+                                                                <a class="dropdown-item remove_account"
+                                                                    data-id="<?php echo $companylist->id; ?>"
+                                                                    data-secure_id="<?php echo $companylist->checker_id; ?>"
+                                                                    data-businessname="<?= $companylist->company_name; ?>"
+                                                                    data-secure_e="<?= $user_key; ?>"
+                                                                    data-checker="<?= $secure_login; ?>">Delete
+                                                                    Account</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
                                                 </tr>
                                                 <?php
                                             }
                                             ?>
 
                                         </tbody>
-                                       
+
                                     </table>
 
                                 </div>
@@ -211,14 +240,14 @@ $data = json_decode($response_call);
                     </div>
                 </div>
             </div>
-           
+
             <?php
             include "controllers/footer.php";
             ?>
         </div>
-       
+
     </div>
-   
+
     <!-- Right modal content -->
     <div id="right-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-sm modal-right">
@@ -529,6 +558,8 @@ $data = json_decode($response_call);
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 
+
+
     <script src="assets/libs/jquery/dist/jquery.min.js"></script>
     <script src="assets/libs/popper.js/dist/umd/popper.min.js"></script>
     <script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -541,7 +572,44 @@ $data = json_decode($response_call);
     <!--Custom JavaScript -->
     <script src="dist/js/custom.min.js"></script>
     <script src="js/add_company.js"> </script>
+    <!-- <script src="assets/toastr/toastr.js"> </script> -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
 
 </html>
+
+
+<!-- Danger Header Modal -->
+<div id="del_members" class="modal fade del_members" tabindex="-1" role="dialog"
+    aria-labelledby="danger-header-modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header modal-colored-header bg-danger">
+                <h4 class="modal-title" id="danger-header-modalLabel">Delete Business Account</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body">
+                <h5 class="mt-0">Account Information</h5>
+
+
+                <div class="form-group">
+                    <label for="username">Business Name</label>
+                    <input class="form-control" type="text" id="businessname" required="" placeholder="Michael Zenaty"
+                        readonly>
+                    <input type="hidden" id="pid">
+                    <input type="hidden" id="secure_e">
+                    <input type="hidden" id="checker">
+                </div>
+
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-danger" id="delete_account">Delete Account</button>
+            </div>
+
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

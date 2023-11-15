@@ -6,7 +6,7 @@ include "../controllers/core.php";
   $password =($_POST['password']);
   try {
     if(isset($email,$password)){
-    $url1 = "$domain_url/auth/auth_user.php?username=$username&&password=$password&&email=$email";
+     $url1 = "$domain_url/auth/auth_user.php?username=$username&&password=$password&&email=$email";
     $response_call = getResult($url1);
     echo $rs = json_decode($response_call);
     if($rs=="success"){
