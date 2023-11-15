@@ -3414,6 +3414,12 @@ input[type="button"].btn-block {
   flex: 1 1 auto;
   padding: 25px; }
 
+  .btn{
+    padding: 10px;
+    margin: 20px;
+    width: 3rem;
+  }
+
 .card-title {
   margin-bottom: 0.75rem; }
 

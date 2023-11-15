@@ -1,8 +1,8 @@
-<?php
+<!-- <?php
 include "controllers/config.php";
 include "controllers/core.php";
-include"controllers/user_data.php";
-?>
+include "controllers/user_data.php";
+?> -->
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
@@ -22,7 +22,7 @@ include"controllers/user_data.php";
     <!-- Custom CSS -->
     <link href="dist/css/style.min.css" rel="stylesheet">
     <?php
-include"fonts/font.php";
+include "fonts/font.php";
 ?>
 </head>
 <body>

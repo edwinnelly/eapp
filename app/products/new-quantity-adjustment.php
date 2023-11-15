@@ -143,7 +143,7 @@
                                                         </button>
                                                         <div class="dropdown-menu">
                                                             <!-- Dropdown menu links -->
-                                                            <a class="dropdown-item" href="#">Edit </a>
+                                                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#first-modal">Edit </a>
                                                             <a class="dropdown-item" href="#">Add </a>
                                                             <a class="dropdown-item" href="#">Delete</a>
                                                         </div>
@@ -163,6 +163,33 @@
             ?>
         </div>
     </div>
+
+    <div id="first-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-right">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center pb-3">
+                        <span class="fw-bold fs-5">Edit Cost Adjustment</span>
+                    </div>
+                    <form action="#" class="pl-5 pr-5">
+
+                        <div class="form-group mb-4">
+                            <input class="form-control" type="text" required="" placeholder="">
+                        </div>
+                        <div class="form-group text-center">
+                            <button class="btn btn-rounded btn-success btn-sm me-2" type="submit">Save</button>
+                            <button class="btn btn-rounded btn-danger btn-sm">X</button>
+                        </div>
+
+                    </form>
+                    <!-- </div> -->
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal-dialog ending-->
         <!-- ============================================================== -->
         <script src="assets/libs/jquery/dist/jquery.min.js"></script>
         <!-- Bootstrap tether Core JavaScript -->
