@@ -13,8 +13,8 @@ if (isset($_SESSION["email"]) && $_SESSION["e_secure"]) {
 include "controllers/config.php";
 include "controllers/core.php";
 
- $email = $_SESSION['email'];
- $e_secure = $_SESSION['e_secure'];
+  $email = $_SESSION['email'];
+  $e_secure = $_SESSION['e_secure'];
 
 try {
     if (isset($email, $e_secure)) {
