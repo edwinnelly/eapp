@@ -15,7 +15,8 @@
             <div class="lds-pos"></div>
         </div>
     </div>
-    <div id="main-wrapper" data-theme="light" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed" data-boxed-layout="full">
+    <div id="main-wrapper" data-theme="light" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+        data-sidebar-position="fixed" data-header-position="fixed" data-boxed-layout="full">
         <header class="topbar" data-navbarbg="skin6">
             <?php
             include "../controllers/header.php";
@@ -44,7 +45,8 @@
                     </div>
                     <div class="col-5 align-self-center">
                         <div class="customize-input float-right">
-                            <select class="custom-select custom-select-set form-control bg-white border-0 custom-shadow custom-radius">
+                            <select
+                                class="custom-select custom-select-set form-control bg-white border-0 custom-shadow custom-radius">
                                 <option selected>Aug 19</option>
                                 <option value="1">July 19</option>
                                 <option value="2">Jun 19</option>
@@ -156,19 +158,20 @@
                         </div>
                     </div>
                 </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="card">
-                                <div class="card-body col-lg-7">
-                                    <h4 class="card-title fw-bold"> Description Info</h4>
-                                    <div class="mb-3">
-                                        <label for="exampleFormControlTextarea1" class="form-label"></label>
-                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" col="7" placeholder="Description"></textarea>
-                                    </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body col-lg-7">
+                                <h4 class="card-title fw-bold"> Description Info</h4>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label"></label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" col="7"
+                                        placeholder="Description"></textarea>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
                 <div class="row">
                     <div class="col-12">
                         <div class="card">

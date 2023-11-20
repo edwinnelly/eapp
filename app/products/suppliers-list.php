@@ -9,50 +9,24 @@
 </head>
 
 <body>
-    <!-- ============================================================== -->
-    <!-- Preloader - style you can find in spinners.css -->
-    <!-- ============================================================== -->
     <div class="preloader">
         <div class="lds-ripple">
             <div class="lds-pos"></div>
             <div class="lds-pos"></div>
         </div>
     </div>
-    <!-- ============================================================== -->
-    <!-- Main wrapper - style you can find in pages.scss -->
-    <!-- ============================================================== -->
     <div id="main-wrapper" data-theme="light" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed" data-boxed-layout="full">
-        <!-- ============================================================== -->
-        <!-- Topbar header - style you can find in pages.scss -->
-        <!-- ============================================================== -->
         <header class="topbar" data-navbarbg="skin6">
             <?php
             include "../controllers/header.php";
             ?>
         </header>
-        <!-- ============================================================== -->
-        <!-- End Topbar header -->
-        <!-- ============================================================== -->
-        <!-- ============================================================== -->
-        <!-- Left Sidebar - style you can find in sidebar.scss  -->
-        <!-- ============================================================== -->
         <aside class="left-sidebar" data-sidebarbg="skin6">
-            <!-- Sidebar scroll-->
             <?php
             include "../controllers/sidebar.php";
             ?>
-            <!-- End Sidebar scroll-->
         </aside>
-        <!-- ============================================================== -->
-        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
-        <!-- ============================================================== -->
-        <!-- ============================================================== -->
-        <!-- Page wrapper  -->
-        <!-- ============================================================== -->
         <div class="page-wrapper">
-            <!-- ============================================================== -->
-            <!-- Bread crumb and right sidebar toggle -->
-            <!-- ============================================================== -->
             <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-7 align-self-center">
@@ -77,17 +51,7 @@
                     </div>
                 </div>
             </div>
-            <!-- ============================================================== -->
-            <!-- End Bread crumb and right sidebar toggle -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
-            <!-- Container fluid  -->
-            <!-- ============================================================== -->
             <div class="container-fluid">
-                <!-- ============================================================== -->
-                <!-- Start Page Content -->
-                <!-- ============================================================== -->
-                <!-- basic table -->
                 <div class="row">
                     <div class="col-12">
                         <div class="card">
@@ -137,7 +101,6 @@
                                                             Action
                                                         </button>
                                                         <div class="dropdown-menu">
-                                                            <!-- Dropdown menu links -->
                                                             <a class="dropdown-item" href="#" data-toggle="modal" data-target="#first-modal">Edit </a>
                                                             <a class="dropdown-item" href="#">Add </a>
                                                             <a class="dropdown-item" href="#">Delete</a>
@@ -167,45 +130,86 @@
                 </div>
                 <div class="modal-body">
                     <div class="text-center pb-3">
-                        <span class="fw-bold fs-5">Edit Supply List</span>
+                        <span class="fw-bold fs-5">Add Supply List</span>
                     </div>
                     <form action="#" class="pl-5 pr-5">
-
                         <div class="form-group mb-4">
+                            <label for="">Vendor Code</label>
+                            <input class="form-control" type="text" required="" placeholder="">
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="">Vendor Name</label>
+                            <input class="form-control" type="text" required="" placeholder="">
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="">Street</label>
+                            <input class="form-control" type="text" required="" placeholder="">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-lg-6 col-xl-6">
+                                <div class="form-group mb-4">
+                                    <label for="">City</label>
+                                    <input class="form-control" type="text" required="" placeholder="">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-xl-6">
+                                <div class="form-group mb-4">
+                                    <label for="">State</label>
+                                    <input class="form-control" type="text" required="" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="">Zip</label>
+                            <input class="form-control" type="text" required="" placeholder="">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-lg-6 col-xl-6">
+                                <div class="form-group mb-4">
+                                    <label for="">Phone</label>
+                                    <input class="form-control" type="text" required="" placeholder="">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-xl-6">
+                                <div class="form-group mb-4">
+                                    <label for="">Alternate Phone</label>
+                                    <input class="form-control" type="text" required="" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="">Vendor Note</label>
+                            <input class="form-control" type="text" required="" placeholder="">
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="">E-mail</label>
+                            <input class="form-control" type="text" required="" placeholder="">
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="">Website</label>
                             <input class="form-control" type="text" required="" placeholder="">
                         </div>
                         <div class="form-group text-center">
-                            <button class="btn btn-rounded btn-success btn-sm me-2" type="submit">Save</button>
-                            <button class="btn btn-rounded btn-danger btn-sm">X</button>
+                            <button class="btn btn-success btn-sm me-2" type="submit">Save</button>
+                            <button class="btn btn-danger btn-sm">X</button>
                         </div>
-
                     </form>
-                    <!-- </div> -->
+                   
                 </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal-dialog ending-->
-        <!-- ============================================================== -->
-        <script src="assets/libs/jquery/dist/jquery.min.js"></script>
-        <!-- Bootstrap tether Core JavaScript -->
-        <script src="assets/libs/popper.js/dist/umd/popper.min.js"></script>
-        <script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
-        <!-- apps -->
-        <!-- apps -->
-        <script src="dist/js/app-style-switcher.js"></script>
-        <script src="dist/js/feather.min.js"></script>
-        <!-- slimscrollbar scrollbar JavaScript -->
-        <script src="assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
-        <script src="assets/extra-libs/sparkline/sparkline.js"></script>
-        <!--Wave Effects -->
-        <!-- themejs -->
-        <!--Menu sidebar -->
-        <script src="dist/js/sidebarmenu.js"></script>
-        <!--Custom JavaScript -->
-        <script src="dist/js/custom.min.js"></script>
-        <!--This page plugins -->
-        <script src="assets/extra-libs/datatables.net/js/jquery.dataTables.min.js"></script>
-        <script src="dist/js/pages/datatable/datatable-basic.init.js"></script>
+            </div>
+        </div>
+    </div>
+    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="assets/libs/popper.js/dist/umd/popper.min.js"></script>
+    <script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="dist/js/app-style-switcher.js"></script>
+    <script src="dist/js/feather.min.js"></script>
+    <script src="assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
+    <script src="assets/extra-libs/sparkline/sparkline.js"></script>
+    <script src="dist/js/sidebarmenu.js"></script>
+    <script src="dist/js/custom.min.js"></script>
+    <script src="assets/extra-libs/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="dist/js/pages/datatable/datatable-basic.init.js"></script>
 </body>
 
 </html>
