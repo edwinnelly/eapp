@@ -7,7 +7,7 @@ if (isset($_SESSION["email"]) && $_SESSION["e_secure"]) {
     $_SESSION = array();
     // Destroy the session
     session_destroy();
-    echo '<script>window.location.href="login.php"</script>';
+    echo '<script>window.location.href="../login.php"</script>';
 }
 include "../../controllers/config.php";
 include "../../controllers/core.php";

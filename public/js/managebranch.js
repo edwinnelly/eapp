@@ -3,7 +3,7 @@ function validateForm() {
   let companyname = document.forms["myForm"]["companyname"].value;
   let address = document.forms["myForm"]["address"].value;
   let btype = document.forms["myForm"]["btype"].value;
-  var regex = /^[a-zA-Z0-9_]{3,20}$/;
+  var regex = /^[a-zA-Z0-9\s]+$/;
 
   if (companyname.length < 4) {
     $(".alert").alert("close");

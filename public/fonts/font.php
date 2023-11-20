@@ -7,4 +7,8 @@
  
 font-family: 'Tilt Neon', sans-serif;
     }
+    .dropdown-menu {
+      max-height: 200px; /* Set a maximum height for the dropdown */
+      overflow-y: auto; /* Enable vertical scrollbar */
+    }
 </style>

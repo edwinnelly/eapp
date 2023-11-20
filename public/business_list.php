@@ -37,6 +37,7 @@ $number_branch = count($data);
     <?php
     include "fonts/font.php";
     ?>
+     
 </head>
 
 <body>
@@ -205,6 +206,8 @@ $number_branch = count($data);
                                                         <?= $companylist->created_date; ?>
                                                     </td>
                                                     <td>
+                                                        
+                                                    
                                                         <div class="btn-group dropright">
                                                             <button type="button" class="btn btn-secondary dropdown-toggle"
                                                                 data-toggle="dropdown" aria-haspopup="true"
@@ -212,17 +215,14 @@ $number_branch = count($data);
                                                                 Action
                                                             </button>
                                                             <div class="dropdown-menu">
+                                                                <br>
+                                                                <br>
                                                                 <!-- Dropdown menu links -->
                                                                 <a class="dropdown-item" href="ui-buttons.html#">Go to
                                                                     Business</a>
                                                                 <a class="dropdown-item" href="ui-buttons.html#">Suspend
                                                                     Account</a>
-                                                                <a class="dropdown-item" href="ui-buttons.html#">View
-                                                                    Logs</a>
-
-                                                                <a class="dropdown-item" href="ui-buttons.html#">Manage
-                                                                    Business
-                                                                </a>
+                                                                
 
                                                                 <a class="dropdown-item remove_account" data-toggle="modal"
                                                                     data-target="#del_members">Profile Settings</a>
