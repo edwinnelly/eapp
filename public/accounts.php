@@ -20,7 +20,7 @@ $data = json_decode($response_call);
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
-    <title>Adminmart Template - The Ultimate Multipurpose admin template</title>
+    <title>Account List - Lentose App</title>
     <!-- This page css -->
     <!-- Custom CSS -->
     <link href="dist/css/style.min.css" rel="stylesheet">
@@ -131,7 +131,7 @@ $data = json_decode($response_call);
                                         <div class="card card-hover">
                                             <div class="p-2 bg-cyan text-center">
                                                 <h1 class="font-light text-white">1,738</h1>
-                                                <h6 class="text-white">Responded</h6>
+                                                <h6 class="text-white">Branches</h6>
                                             </div>
                                         </div>
                                     </div>
@@ -140,7 +140,7 @@ $data = json_decode($response_call);
                                         <div class="card card-hover">
                                             <div class="p-2 bg-success text-center">
                                                 <h1 class="font-light text-white">1100</h1>
-                                                <h6 class="text-white">Resolve</h6>
+                                                <h6 class="text-white">Staff</h6>
                                             </div>
                                         </div>
                                     </div>
@@ -203,17 +203,15 @@ $data = json_decode($response_call);
                                                             </button>
                                                             <div class="dropdown-menu">
                                                                 <!-- Dropdown menu links -->
-                                                                <a class="dropdown-item" href="ui-buttons.html#">Go to
-                                                                    Business</a>
-                                                                <a class="dropdown-item" href="ui-buttons.html#">Suspend
-                                                                    Account</a>
-                                                                <a class="dropdown-item" href="ui-buttons.html#">View
-                                                                    Logs</a>
-                                                                <a class="dropdown-item" href="business_list.php?cida=<?php echo base64_encode($companylist->checker_id); ?>&&cidname= <?= base64_encode($companylist->company_name); ?>">Manage
+                                                                <a class="dropdown-item" href="business_list.php?cida=<?php echo base64_encode($companylist->checker_id); ?>&&cidname= <?= base64_encode($companylist->company_name); ?>">Go to
                                                                     Business
                                                                 </a>
+                                                               
+                                                                <a class="dropdown-item" href="ui-buttons.html#">View
+                                                                    Logs</a>
+                                                                
                                                                 <a class="dropdown-item remove_account" data-toggle="modal"
-                                                                    data-target="#del_members">Profile Settings</a>
+                                                                    data-target="#del_members">Account & Settings</a>
                                                                 <div class="dropdown-divider"></div>
                                                                 <a class="dropdown-item remove_account"
                                                                     data-id="<?php echo $companylist->id; ?>"
@@ -545,13 +543,10 @@ $data = json_decode($response_call);
                                 <option value="Zimbabwe">Zimbabwe</option>
                             </select>
                         </div>
-
-
                         <div class="form-group text-center">
                             <button type="submit" id="reset-btn"
                                 class="btn waves-effect waves-light btn-outline-dark">Create Account</button>
                         </div>
-
                     </form>
                 </div>
             </div><!-- /.modal-content -->

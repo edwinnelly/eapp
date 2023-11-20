@@ -1,17 +1,16 @@
 <nav class="navbar top-navbar navbar-expand-md">
                 <div class="navbar-header" data-logobg="skin6">
                     <!-- This is for the sidebar toggle which is visible on mobile only -->
-                    <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i
-                            class="ti-menu ti-close"></i></a>
+                     <a><img src="https://cdn4.iconfinder.com/data/icons/web-and-app-1/73/Normal_icon-03-256.png" class="nav-toggler waves-effect waves-light d-block d-md-none"  href="javascript:void(0)" style="height: 30px;"></a>
                     <!-- ============================================================== -->
                     <!-- Logo -->
                     <!-- ============================================================== -->
                     <div class="navbar-brand">
                         <!-- Logo icon -->
-                        <a href="index.html">
+                        <a href="dashboard.php">
                             <b class="logo-icon">
                                 <!-- Dark Logo icon -->
-                                <img src="assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+                                <img src="logo.png" alt="homepage" class="dark-logo" height="65" style="margin-top: 16px;" />
                                 <!-- Light Logo icon -->
                                 <img src="assets/images/logo-icon.png" alt="homepage" class="light-logo" />
                             </b>
@@ -19,9 +18,9 @@
                             <!-- Logo text -->
                             <span class="logo-text">
                                 <!-- dark Logo text -->
-                                <img src="assets/images/logo-text.png" alt="homepage" class="dark-logo" />
+                                <!-- <img src="assets/images/logo-text.png" alt="homepage" class="dark-logo" /> -->
                                 <!-- Light Logo text -->
-                                <img src="assets/images/logo-light-text.png" class="light-logo" alt="homepage" />
+                                <!-- <img src="assets/images/logo-light-text.png" class="light-logo" alt="homepage" /> -->
                             </span>
                         </a>
                     </div>

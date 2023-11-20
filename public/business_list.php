@@ -28,7 +28,7 @@ $number_branch = count($data);
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
-    <title>Adminmart Template - The Ultimate Multipurpose admin template</title>
+    <title><?= $business_name; ?> - Business Branch</title>
     <!-- This page css -->
     <!-- Custom CSS -->
     <link href="dist/css/style.min.css" rel="stylesheet">
