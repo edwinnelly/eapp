@@ -99,7 +99,7 @@
                                     <table id="zero_config" class="table table-striped table-bordered no-wrap">
                                         <thead>
                                             <div class="mb-5">
-                                                <button type="button" class="btn btn-primary float-right " data-toggle="modal" data-target="#right-modal">Add New Categories</button>
+                                                <button type="button" class="btn btn-primary float-right " data-toggle="modal" data-target="#add-cat">Add New Categories</button>
                                             </div>
                                             <tr>
                                                 <th>S/N</th>
@@ -122,7 +122,7 @@
                                                         </button>
                                                         <div class="dropdown-menu">
 
-                                                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#sright-modal">Edit</a>
+                                                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit-cat">Edit</a>
                                                             <a class="dropdown-item" href="ui-buttons.html#">Delete</a>
                                                         </div>
                                                         <!-- <button type="button" class="btn btn-info" data-toggle="modal" data-target="#login-modal">Log in Modal</button> -->
@@ -143,61 +143,50 @@
 
         </div>
     </div>
-   
-
-    <div id="right-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-sm modal-right">
+    <div id="add-cat" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="dark-header-modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header border-0">
+                <div class="modal-header modal-colored-header bg-dark">
+                    <h4 class="modal-title" id="dark-header-modalLabel">Add Category</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                 </div>
                 <div class="modal-body">
-                    <div class="text-center pb-3">
-                        <span class="fw-bold fs-5">Add New Category</span>
-                    </div>
                     <form action="#" class="pl-5 pr-5">
-
                         <div class="form-group mb-4">
+                            <label for="" class="fw-bold">Category Name</label>
                             <input class="form-control" type="text" required="" placeholder="">
                         </div>
-                        <div class="form-group text-center">
-                            <button class="btn btn-rounded btn-primary btn-sm me-2" type="submit">Add Category</button>
-                            <button class="btn btn-rounded btn-danger btn-sm">X</button>
-                        </div>
-
                     </form>
-                    <!-- </div> -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark">Save changes</button>
                 </div>
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
-    </div><!-- /.modal-dialog ending-->
-    <div id="sright-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-sm modal-right">
+    </div><!-- /.modal -->
+    <div id="edit-cat" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="dark-header-modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header border-0">
+                <div class="modal-header modal-colored-header bg-dark">
+                    <h4 class="modal-title" id="dark-header-modalLabel">Edit Category</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                 </div>
                 <div class="modal-body">
-                    <div class="text-center pb-3">
-                        <span class="fw-bold fs-5">Edit Category</span>
-                    </div>
                     <form action="#" class="pl-5 pr-5">
-
                         <div class="form-group mb-4">
+                            <label for="" class="fw-bold">Category Name</label>
                             <input class="form-control" type="text" required="" placeholder="">
                         </div>
-                        <div class="form-group text-center">
-                            <button class="btn btn-rounded btn-success btn-sm me-2" type="submit">Save</button>
-                            <button class="btn btn-rounded btn-danger btn-sm">X</button>
-                        </div>
-
                     </form>
-                    <!-- </div> -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark">Save changes</button>
                 </div>
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
-    </div><!-- SignIn modal content -->
-
+    </div><!-- /.modal -->
     <!-- ============================================================== -->
     <script src="assets/libs/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap tether Core JavaScript -->

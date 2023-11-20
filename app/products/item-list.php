@@ -15,8 +15,7 @@
             <div class="lds-pos"></div>
         </div>
     </div>
-    <div id="main-wrapper" data-theme="light" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
-        data-sidebar-position="fixed" data-header-position="fixed" data-boxed-layout="full">
+    <div id="main-wrapper" data-theme="light" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed" data-boxed-layout="full">
         <header class="topbar" data-navbarbg="skin6">
             <?php
             include "../controllers/header.php";
@@ -30,7 +29,7 @@
             <!-- End Sidebar scroll-->
         </aside>
         <div class="page-wrapper">
-             <div class="page-breadcrumb">
+            <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-7 align-self-center">
                         <h4 class="page-title text-truncate text-dark font-weight-medium mb-1"> Item List</h4>
@@ -45,8 +44,7 @@
                     </div>
                     <div class="col-5 align-self-center">
                         <div class="customize-input float-right">
-                            <select
-                                class="custom-select custom-select-set form-control bg-white border-0 custom-shadow custom-radius">
+                            <select class="custom-select custom-select-set form-control bg-white border-0 custom-shadow custom-radius">
                                 <option selected>Aug 19</option>
                                 <option value="1">July 19</option>
                                 <option value="2">Jun 19</option>
@@ -54,7 +52,7 @@
                         </div>
                     </div>
                 </div>
-            </div> 
+            </div>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12">
@@ -103,9 +101,7 @@
                                                 <td></td>
                                                 <td class="text-center">
                                                     <div class="btn-group dropleft">
-                                                        <button type="button" class="btn btn-primary btn-sm"
-                                                            data-toggle="dropdown" aria-haspopup="true"
-                                                            aria-expanded="false">
+                                                        <button type="button" class="btn btn-primary btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                             Action
                                                         </button>
                                                         <div class="dropdown-menu">
@@ -189,15 +185,15 @@
                             <input class="form-control" id="item-name" type="text" required="" placeholder="">
                         </div>
                         <div class="row">
-                        <div class="form-group mb-4">
-                            <label for="item-name">On Hand Quantity</label>
-                            <input class="form-control" id="item-name" type="number" required="" placeholder="">
+                            <div class="form-group mb-4">
+                                <label for="item-name">On Hand Quantity</label>
+                                <input class="form-control" id="item-name" type="number" required="" placeholder="">
+                            </div>
+                            <div class="form-group mb-4">
+                                <label for="item-name">Available Quantity</label>
+                                <input class="form-control" id="item-name" type="number" required="" placeholder="">
+                            </div>
                         </div>
-                        <div class="form-group mb-4">
-                            <label for="item-name">Available Quantity</label>
-                            <input class="form-control" id="item-name" type="number" required="" placeholder="">
-                        </div>
-</div>
                         <div class="form-group text-center">
                             <button class="btn btn-rounded btn-primary btn-sm me-2" type="submit">Add Item</button>
                             <button class="btn btn-rounded btn-danger btn-sm">X</button>
