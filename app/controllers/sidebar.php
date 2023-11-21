@@ -10,7 +10,7 @@
                         <li class="nav-small-cap"><span class="hide-menu">Activities</span></li>
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
                                 aria-expanded="false"><i data-feather="file-text" class="feather-icon"></i><span
-                                    class="hide-menu">Product </span></a>
+                                    class="hide-menu">Product and Services </span></a>
                             <ul aria-expanded="false" class="collapse  first-level base-level-line">
                                 <li class="sidebar-item"><a href="categories.php
                                 " class="sidebar-link"><span

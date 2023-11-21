@@ -106,6 +106,11 @@
                                                         </button>
                                                         <div class="dropdown-menu">
                                                             <!-- Dropdown menu links -->
+                                                            <br>
+                                                            <br>
+                                                            <br>
+                                                            <br>
+                                                            <br>
                                                             <a class="dropdown-item" href="#">Edit item Info </a>
                                                             <a class="dropdown-item" href="#">Edit item Images </a>
                                                             <a class="dropdown-item" href="edit-item-list.php">Edit item Category </a>
