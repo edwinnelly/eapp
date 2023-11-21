@@ -13,9 +13,13 @@
                                     class="hide-menu">Account List
                                 </span></a>
                         </li>
+
+                        
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="app-chat.html"
                                 aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
                                     class="hide-menu">Chat</span></a></li>
+
+
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="app-calendar.html"
                                 aria-expanded="false"><i data-feather="calendar" class="feather-icon"></i><span
                                     class="hide-menu">Calendar</span></a></li>
