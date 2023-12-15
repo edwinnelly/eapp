@@ -10,15 +10,15 @@
                         <a href="dashboard.php">
                             <b class="logo-icon">
                                 <!-- Dark Logo icon -->
-                                <img src="logo.png" alt="homepage" class="dark-logo" height="65" style="margin-top: 16px;" />
+                                <img src="https://cdn2.iconfinder.com/data/icons/flat-illustrations-1/550/Social_Campaign-256.png" alt="homepage" class="dark-logo" height="90" style="margin-top: 16px;" />
                                 <!-- Light Logo icon -->
-                                <img src="assets/images/logo-icon.png" alt="homepage" class="light-logo" />
+                                <!-- <img src="assets/images/logo-icon.png" alt="homepage" class="light-logo" /> -->
                             </b>
                             <!--End Logo icon -->
                             <!-- Logo text -->
                             <span class="logo-text">
                                 <!-- dark Logo text -->
-                                <!-- <img src="assets/images/logo-text.png" alt="homepage" class="dark-logo" /> -->
+                                <!-- <img src="https://cdn0.iconfinder.com/data/icons/wrapped-hands/2000/Simple_Buy-256.png" alt="homepage" class="dark-logo" /> -->
                                 <!-- Light Logo text -->
                                 <!-- <img src="assets/images/logo-light-text.png" class="light-logo" alt="homepage" /> -->
                             </span>

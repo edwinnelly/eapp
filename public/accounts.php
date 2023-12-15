@@ -203,6 +203,8 @@ $data = json_decode($response_call);
                                                             </button>
                                                             <div class="dropdown-menu">
                                                                 <!-- Dropdown menu links -->
+                                                                <br>
+                                                                <br>
                                                                 <a class="dropdown-item" href="business_list.php?cida=<?php echo base64_encode($companylist->checker_id); ?>&&cidname= <?= base64_encode($companylist->company_name); ?>">Go to
                                                                     Business
                                                                 </a>
@@ -210,8 +212,7 @@ $data = json_decode($response_call);
                                                                 <a class="dropdown-item" href="ui-buttons.html#">View
                                                                     Logs</a>
                                                                 
-                                                                <a class="dropdown-item remove_account" data-toggle="modal"
-                                                                    data-target="#del_members">Account & Settings</a>
+                                                                <a href="edit-profile.php?cida=<?php echo base64_encode($companylist->checker_id); ?>" class="dropdown-item remove_account">Account & Settings</a>
                                                                 <div class="dropdown-divider"></div>
                                                                 <a class="dropdown-item remove_account"
                                                                     data-id="<?php echo $companylist->id; ?>"

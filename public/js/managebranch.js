@@ -102,21 +102,7 @@ $("#myForm").on("submit", function (e) {
             location.reload(true);
           }, 1000);
         } else {
-          alert(data);
-          // $(".alert").alert("close");
-          // var notification =
-          //   '<div class="alert alert-danger alert-dismissible bg-danger text-white border-0 fade show" role="alert">';
-          // notification += "Error creating new branch account";
-          // notification +=
-          //   '<button type="button" class="close" data-dismiss="alert" aria-label="Close">';
-          // notification +=
-          //   '<span aria-hidden="true">&times;</span></button></div>';
-          // $("#notificationContainer").append(notification);
-
-          // setTimeout(function () {
-          //   var btn = $("#reset-btn");
-          //   btn.attr("disabled", false).html("Create Account");
-          // }, 3000);
+         
         }
       },
     });
