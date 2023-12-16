@@ -170,10 +170,10 @@ if ($jsonResponse === null) {
                                 <div id="notificationContainer"></div>
 
                                 <form class="pl-3 pr-3" name="myForm" id="myForm" method="post">
-                                    <input type="hidden" name="sl" value="<?php echo base64_encode($e_secure); ?>">
-                                    <input type="hidden" name="hk" value="<?php echo base64_encode($user_key); ?>">
+                                    <input type="hidden" name="secure_key" value="<?php echo ($e_secure); ?>">
+                                    <input type="hidden" name="host_key" value="<?php echo ($user_key); ?>">
                                     <input type="hidden" name="business_id_store"
-                                        value="<?php echo base64_encode($business_id); ?>">
+                                        value="<?php echo ($business_id); ?>">
                                     <div class="form-body">
                                         <label>Company name </label>
                                         <div class="row">
@@ -195,7 +195,7 @@ if ($jsonResponse === null) {
                                                 <div class="form-group">
 
                                                     <input type="text" class="form-control" placeholder="Legal name"
-                                                        value="<?php echo htmlspecialchars($data->legal_name); ?>"
+                                                        value="<?php echo htmlspecialchars_decode($data->legal_name); ?>"
                                                         name="legalname">
                                                 </div>
                                                 <div class="form-group">

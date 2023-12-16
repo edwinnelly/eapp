@@ -31,12 +31,12 @@ $dataToSend = [
     'industry' => $industry,
     'currency' => $currency,
     'website' => $website,
-    'sl' => $secure_es, // Use consistent variable names
-    'hk' => $host_keys, // Use consistent variable names
+    
     'com_addr' => $com_addr,
     'business_id_store' => $business_id_store,
     'cellphone' => $cellphone,
 ];
+
 
 // Prepare and send API request (using cURL)
 $apiEndpoint = "$domain_url/account_manager/update_stores.php";
@@ -47,19 +47,11 @@ $jsonData = json_encode($dataToSend);
 // cURL setup
 $ch = curl_init();
 
-// curl_setopt($ch, CURLOPT_POST, 1);
-// curl_setopt($ch, CURLOPT_URL, $apiEndpoint);
-// curl_setopt($ch, CURLOPT_POSTFIELDS, ['data' => $jsonData]);
-// curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-// curl_setopt($ch, CURLOPT_HEADER, false)
-
 curl_setopt($ch, CURLOPT_URL, $apiEndpoint);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_POST, 1);
 curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonData);
 curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
-
-
 
 // Execute the cURL request and get the response
 $response = curl_exec($ch);
