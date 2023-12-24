@@ -59,7 +59,7 @@ $("#myForm").on("submit", function (e) {
       cache: false,
       processData: false,
       success: (data) => {
-        alert(data);
+       alert(data);
         // if (data.trim() == "success") {
         //   Swal.fire({
         //     title: "success!",
@@ -67,7 +67,10 @@ $("#myForm").on("submit", function (e) {
         //     icon: "success",
         //   });
         //   setTimeout(function () {
-        //     window.location.href = "login";
+        //     var btn = $("#reset-btn");
+        //     btn
+        //       .attr("disabled", false)
+        //       .html("Update Account");
         //   }, 3000);
         // } else {
         //   Swal.fire({
@@ -76,10 +79,6 @@ $("#myForm").on("submit", function (e) {
         //     icon: "error",
         //   });
 
-        //   setTimeout(function () {
-        //     var btn = $("#reset-btn");
-        //     btn.attr("disabled", false).html("Sign Up");
-        //   }, 3000);
         // }
       },
     });

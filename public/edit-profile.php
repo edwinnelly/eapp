@@ -2,56 +2,81 @@
 include "controllers/config.php";
 include "controllers/core.php";
 include "controllers/user_data.php";
-//get the data value
-$business_id = base64_decode(cleanUserInput($_GET['cida']));
-if (empty($business_id)) {
-    echo '<script>window.location.href="dashboard.php"</script>';
-}
-// Assuming you have an array of data
-$dataToSend = [
-    'secure_key' => "$secure_login",
-    'host_key' => $user_key,
-    'company_id' => "$business_id"
-];
-// Convert the array to JSON
-$jsonData = json_encode($dataToSend);
-
-// Prepare and send API request (using cURL)
-$apiEndpoint = "$domain_url/account_manager/editprofile.php";
-$ch = curl_init($apiEndpoint);
-
-curl_setopt($ch, CURLOPT_POST, 1);
-curl_setopt($ch, CURLOPT_URL, $apiEndpoint);
-curl_setopt($ch, CURLOPT_POSTFIELDS, ['data' => $jsonData]);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch, CURLOPT_HEADER, false);
-
-// Execute the request and capture the response
-$response = curl_exec($ch);
-
-// Check for cURL errors
-if (curl_errno($ch)) {
-    echo 'Curl error: ' . curl_error($ch);
-}
-
-// Close cURL session
-curl_close($ch);
-
-// Decode the JSON response
-$jsonResponse = json_decode($response);
-
-// Check if decoding was successful
-if ($jsonResponse === null) {
-    echo 'Error decoding JSON response';
-} else {
-    // Convert array to object using stdClass
-    $objectData = (object) $jsonResponse;
-    foreach ($objectData as $data) {
-        //Null
+try {
+    if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+       
+        // Validate and sanitize the data value
+        $business_id = base64_decode(cleanUserInput($_GET['cida']));
+    } else {
+        // The request was made using a different method (e.g., POST, PUT, DELETE)
+        throw new Exception('Invalid request method');
     }
+
+    // Use constants for fixed values
+    define('API_ENDPOINT', "$domain_url/account_manager/editprofile.php");
+
+    // Assuming you have an array of data
+    $dataToSend = [
+        'secure_key' => $secure_login,
+        'host_key' => $user_key,
+        'company_id' => $business_id
+    ];
+
+    // Convert the array to JSON
+    $jsonData = json_encode($dataToSend);
+
+    // Prepare and send API request (using cURL)
+    $ch = curl_init(API_ENDPOINT);
+
+    // Set cURL options
+    curl_setopt_array($ch, [
+        CURLOPT_POST => 1,
+        CURLOPT_URL => API_ENDPOINT,
+        CURLOPT_POSTFIELDS => ['data' => $jsonData],
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_HEADER => false,
+        // Add more cURL options as needed
+    ]);
+
+    // Execute the request and capture the response
+    $response = curl_exec($ch);
+
+    // Check for cURL errors
+    if (curl_errno($ch)) {
+        throw new Exception('Curl error: ' . curl_error($ch));
+    }
+
+    // Close cURL session
+    curl_close($ch);
+
+    // Decode the JSON response
+    $jsonResponse = json_decode($response);
+
+    // Check for JSON decoding errors
+    if (json_last_error() !== JSON_ERROR_NONE) {
+        throw new Exception('Error decoding JSON response: ' . json_last_error_msg());
+    }
+
+    if (empty($jsonResponse)) {
+        throw new Exception('Empty JSON response');
+    }
+
+    // Convert array to object using stdClass (if needed)
+    $objectData = (object) $jsonResponse;
+
+    // Loop through the object data (if needed)
+    foreach ($objectData as $data) {
+        // Do something with $data
+    }
+} catch (Exception $e) {
+    // Log the exception, display a generic error message, or redirect the user to an error page
+    echo 'An error occurred: ' . $e->getMessage();
+    exit;
 }
 
+// Continue with the rest of your code...
 ?>
+
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 
@@ -169,11 +194,12 @@ if ($jsonResponse === null) {
 
                                 <div id="notificationContainer"></div>
 
-                                <form class="pl-3 pr-3" name="myForm" id="myForm" method="post">
+                                <form class="pl-3 pr-3" name="myForm" id="myForm" method="post"
+                                    enctype="multipart/form-data">
                                     <input type="hidden" name="secure_key" value="<?php echo ($e_secure); ?>">
                                     <input type="hidden" name="host_key" value="<?php echo ($user_key); ?>">
-                                    <input type="hidden" name="business_id_store"
-                                        value="<?php echo ($business_id); ?>">
+                                    <input type="hidden" name="business_id_store" value="<?php echo ($business_id); ?>">
+                                    <input type="hidden" name="lentose_token" value="<?php echo ($csrf_token); ?>">
                                     <div class="form-body">
                                         <label>Company name </label>
                                         <div class="row">
@@ -282,7 +308,7 @@ Company email" name="email_addr">
                                             <div class="col-md-7">
                                                 <label>Business logo</label>
                                                 <div class="form-group">
-                                                    <input type="file" name="file" class="form-control"
+                                                    <input type="file" name="file" id="file" class="form-control"
                                                         placeholder="logo">
                                                 </div>
                                             </div>

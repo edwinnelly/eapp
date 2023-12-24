@@ -1,7 +1,7 @@
 <?php
 session_start();
-if (isset($_SESSION["email"]) && $_SESSION["e_secure"]) {
-
+if (isset($_SESSION["email"]) && $_SESSION["e_secure"] && $_SESSION["csrf_token"]) {
+    //allow users
 } else {
     // Clear all session variables
     $_SESSION = array();
@@ -13,8 +13,8 @@ include "../../controllers/config.php";
 include "../../controllers/core.php";
 
 $email = $_SESSION['email'];
-
 $e_secure = $_SESSION['e_secure'];
+$csrf_token = $_SESSION["csrf_token"];
 try {
     if (isset($email, $e_secure)) {
         $url1 = "$domain_url/auth/user_data.php?email=$email";
@@ -26,7 +26,7 @@ try {
             $id1 = $user_info->id;
             $account_activation = $user_info->account_activation;
             $user_key = $user_info->user_key;
-             $secure_login = $user_info->secure_login;
+            $secure_login = $user_info->secure_login;
         }
     } else {
         // Clear all session variables
